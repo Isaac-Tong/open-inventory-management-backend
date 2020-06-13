@@ -1,0 +1,23 @@
+{
+  "name": "open-inventory-management-backend",
+  "version": "1.0.0",
+  "description": "Backend for inventory management software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isaac-Tong/open-inventory-management-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isaac-Tong/open-inventory-management-backend/issues"
+  },
+  "homepage": "https://github.com/Isaac-Tong/open-inventory-management-backend#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
