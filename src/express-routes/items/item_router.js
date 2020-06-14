@@ -20,11 +20,12 @@ router.post('/', async (req, res) => {
 //Retrieve routes
 router.get('/', async (req, res) => {
     try {
+        var hello = await itemModel.findById('5ee4d9f103f8d32fd040e2b4')
+        res.send(hello)
         console.log('Router hit');
     } catch (error) {
         console.log(error);
     }
-    res.send('Saved')
 })
 
 
