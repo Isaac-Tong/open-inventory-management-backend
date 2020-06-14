@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+
+//Disable collection pluralization
 mongoose.pluralize(null);
 
 var itemSchema = new Schema({
@@ -10,6 +12,10 @@ var itemSchema = new Schema({
     quantity: {
         type: Number,
         required: true,
+    },
+    comments: {
+        type: String,
+
     },
     price: {
         type: Number
