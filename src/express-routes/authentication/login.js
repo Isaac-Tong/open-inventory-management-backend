@@ -6,6 +6,7 @@ var issueJWT = require('./jwt_token')
 //Create a new user
 router.post('/new', async (req, res) => {
     try {
+        
 
         //Save user to the database
         var newUser = new userModel(req.body);
@@ -20,6 +21,7 @@ router.post('/new', async (req, res) => {
 
     } catch (error) {
         console.log(error);
+        res.send('an issue occured')
     }
 })
 
