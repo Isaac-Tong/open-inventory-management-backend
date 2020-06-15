@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
 router.get('/', async (req, res) => {
     try {
         var hello = await itemModel.findById('5ee4d9f103f8d32fd040e2b4')
-        res.send('passed')
+        res.send(hello)
     } catch (error) {
         res.send('error occured')
         console.log(error);
