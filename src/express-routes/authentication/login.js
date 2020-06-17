@@ -15,6 +15,8 @@ router.post('/new', async (req, res) => {
 
         //Return a JWT token with payload including username and database id
         var token = issueJWT.issue_jwt(newUser.username, newUser._id)
+        console.log(newUser);
+        
         
         res.send(token);
         
@@ -26,8 +28,6 @@ router.post('/new', async (req, res) => {
 })
 
 //Authenticate a user
-
-
 
 
 module.exports = router;
